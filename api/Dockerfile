@@ -13,5 +13,5 @@ RUN npm install
 # define which port is gonna exposed by the container (this is for docker desktop)
 EXPOSE 4000
 
-# third layer run the command to run the application ( this command run after the image is ready or after building process is done, and it will run when container is running )
+# third layer run the command to run the application ( this command run after the image is ready or after building process is done, and it will run when we start the container )
 CMD [ "node", "app.js" ]
