@@ -1,0 +1,2 @@
+# what file/folders that we don't want to copy into the image directory
+node_modules
