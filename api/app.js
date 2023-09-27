@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
     },
     {
       id: "4",
-      title: "Show Review: Squid game",
+      title: "Show Review: Money Heist",
     },
   ]);
 });
