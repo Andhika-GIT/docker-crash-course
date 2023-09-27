@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  api:
+    # 1. bulld: search the docker file from given repo, and build an image from that docker file
+    build: ./api
+
+    # 2. after the image is created, run the container, and name it
+    container_name: api_c
+
+    # 3. setup the port to map the port from container with the port from our local computer
+    ports:
+      - '4000:4000'
+
+    # 4. create bookmark from the /app in the container that reference into all the files inside the ./api in our computer, so every change will be automatically reflected in our container, without having to rebuild the image again
+    volumes:
+      - ./api:/app
+      - /app/node_modules
